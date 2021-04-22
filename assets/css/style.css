@@ -294,10 +294,12 @@ justify-self: center;
   header{
     display: none;
   }
+  main {
+    width: 100%;
+  }
   .min-nav{
     width: 100%;
     display: block !important;
-     
   }
   .min-nav-con {
     width: 100%;

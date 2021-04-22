@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+body {
+    overflow-x: hidden;
+}
 .logo-background {
     background-image: url('../img/twitter_back.png');
     height: 95vh;
@@ -13,7 +16,7 @@
     color: white;
 }
 .login {
-    padding-top: 20px;
+    padding: 20px 0 0 0;
 }
 .login-inputs {
     width: 90%;
@@ -93,4 +96,31 @@
     color: #1DA1F2;
     font-weight: bolder;
     font-size: 15px;
+}
+footer {
+    height: 5vh;
+}
+.footer-items {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.footer-item {
+    list-style-type: none;
+    padding: 0 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-item span {
+    color: #5B7083;
+    font-size: 13px;
+}
+.footer-item a {
+    text-decoration: none;
+    color: #5B7083;
+    font-size: 13px;
+}
+.footer-item a:hover {
+    text-decoration: underline;
 }
