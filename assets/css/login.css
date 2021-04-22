@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+.logo-background {
+    background-image: url('../img/twitter_back.png');
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.twitter-left {
+    font-size: 242px;
+    color: white;
+}
+.login {
+    padding-top: 20px;
+}
+.login-inputs {
+    width: 90%;
+}
+.login-input-item {
+    height: 60px;
+    border-radius: 4px;
+}
+.login-input-item:focus {
+    box-shadow: none;
+    border-color: #1DA1F2;
+    border-width: 1px;
+    box-shadow: 0 0 0 1px #1DA1F2;
+}
+.input-cols {
+    padding: 0 10px;
+}
+#loginBtn {
+    border: 1px solid;
+    border-color: rgb(29, 161, 242);
+    border-radius: 9999px;
+    height: 46px;
+    width: 100px;
+    color: #1DA1F2;
+    font-weight: bolder;
+    font-size: 15px;
+}
+#loginBtn:hover {
+    background-color: #E8F5FE;
+}
+.forgot-password {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 10px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #1DA1F2;
+}
+.login-others {
+    padding: 20% 0;
+}
+.twitter-right {
+    color: #1DA1F2;
+    font-size: 42px;
+}
+.other-header h1 {
+    font-size: 64px;
+    font-weight: bolder;
+}
+.other-paragraph p {
+    font-size: 31px;
+    font-weight: bolder;
+}
+
+.other-header h1 {
+    padding: 50px 0;
+}
+
+#signUp {
+    width: 50%;
+    background-color: #1DA1F2;
+    color: white;
+    font-size: 15px;
+    height: 48px;
+    font-weight: bolder;
+    border-radius: 9999px;
+    margin-bottom: 20px;
+}
+#signUp:hover {
+    background-color: #1A91DA;
+}
+#secondLogIn {
+    border-color: #1DA1F2;
+    border-radius: 9999px;
+    height: 48px;
+    width: 50%;
+    color: #1DA1F2;
+    font-weight: bolder;
+    font-size: 15px;
+}
