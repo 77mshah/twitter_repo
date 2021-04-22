@@ -11,12 +11,10 @@ button {
   background-color: inherit;
 }
 header {
-  width: 12%;
-  position: fixed;
+  width: 15%;
 }
 main {
   width: 85%;
-  margin-left: 18%;
 }
 main .row {
   margin: 0 !important;
@@ -26,7 +24,6 @@ a {
 }
 .body-container {
   display: flex;
-  z-index: -1;
 }
 .menu-items {
   list-style: none;
@@ -42,17 +39,17 @@ a {
   font-size: 28px;
   padding-left: 10px;
 }
+.logo:hover{
+  
+
+}
 .menu-item {
   font-size: 20px;
-  margin: 5px 0;
+  margin: 15px 0;
   width: auto;
   padding: 5px;
 }
 .menu-item a:hover {
-  background-color: #e8f5fe;
-  color: #1da1f2;
-}
-.menu-active a{
   background-color: #e8f5fe;
   color: #1da1f2;
 }
@@ -110,22 +107,8 @@ a {
 .tweet-settings a:hover {
   color: #4fb6f5;
 }
-.tweet-link{
-  border: none;
-  width: 90%;
-  height: 40px;
+.tweet-button a {
   background-color: #1da1f2;
-  padding: 5px;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 30px;
-  color: white;
-  font-weight: bold; 
-  margin-top:4% !important;
-}
-.tweet-button button {
-  border: none;
-  background-color: #8ED0F8;
   color: #fff;
   border-radius: 20px;
   padding: 10px 10px;
@@ -147,8 +130,7 @@ a {
   border-radius: 20px !important;
 }
 .card-img-top {
-  border-top-left-radius: 20px !important;
-  border-top-right-radius: 20px !important;
+  border-radius: 15px !important;
   height: 250px;
   object-fit: fill;
   object-position: center;
@@ -183,15 +165,10 @@ a {
   color: #9eaab5;
   font-size: 12px;
 }
-.widget-container {
-  right: 15% !important;
-  width: 25% !important;
-}
 .tweet-actions button,
 .widget-container button {
   border: none;
 }
-
 .topics-widget {
   background-color: #f7f9fa;
   margin-top: 20px;
@@ -218,3 +195,139 @@ a {
 .footer p {
   font-size: 13px;
 }
+
+/*left side tweet */
+ .tweet-link{
+   border: none;
+  width: 90%;
+  height: 40px;
+  background-color: #1a91da;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold; 
+  margin-top:4% !important;
+}
+#tweet-link2{
+  display: none;
+}
+
+/*main container post div */
+.tweet-actions {
+width: 100%;
+justify-self: center;
+}
+ .fa-strava {
+   color:#3b9edb ;
+ }
+
+
+ /*menu-items*/
+.menu-item > a> span {
+  margin: 5px;
+  font-weight: bold;
+}
+
+/* max width:500px nav */
+.min-nav{
+  display: none !important;
+}
+.chat-tweet{
+  display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*mEDIA qUERIES*/
+
+@media screen and (max-width: 1280px) {
+
+  /*Menu items innertext*/ 
+  /* ishlemedi */
+  .menu-item > a> span{
+      display: none;
+  }
+.menu-item{
+  margin: 15px 10%;
+}
+.logo {
+  display:flex;
+  padding: 15px;
+  /* justify-content:center; */
+}
+
+  .tweet-link {
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+  }
+  #tweet-link2{
+    display: inline-block;
+  }
+  #tweet-link1{
+    display: none;
+  }
+  
+
+}
+@media screen and (max-width: 1005px){
+  .wdgt-con{
+    display: none;
+  }
+  .widget-container{
+    display:none !important;
+  }
+
+
+}
+@media screen and (max-width: 500px){
+  header{
+    display: none;
+  }
+  .min-nav{
+    width: 100%;
+    display: block !important;
+     
+  }
+  .min-nav-con {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border: 1px solid lightgray;    
+    font-size: 25px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex; 
+    justify-content: space-around;
+  }
+  .min-nav-con>a {
+    color: rgb(128, 138, 163) !important;
+  }
+  .chat-tweet {
+    display:flex !important;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius:50px;
+    color: white;
+    background-color:#1da1f2;
+    right: 20px;
+    bottom: 70px;
+    font-size: 20px;
+  }
+}
+
+
