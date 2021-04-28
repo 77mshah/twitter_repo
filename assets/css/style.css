@@ -16,6 +16,12 @@ header {
 main {
   width: 85%;
 }
+textarea {
+  resize: none !important;
+  width: 100%;
+  border: none;
+  outline: none;
+}
 main .row {
   margin: 0 !important;
 }
@@ -41,8 +47,8 @@ a {
 }
 .logo:hover{
   
-
 }
+
 .menu-item {
   font-size: 20px;
   margin: 15px 0;
@@ -161,6 +167,13 @@ a {
 .trends-title h5 {
   font-weight: bolder;
 }
+.trends-title button {
+  color: #29A6F3;
+}
+.trends-title button:hover {
+  background-color: #E1F0FA;
+  border-radius: 50%;
+}
 .trends-item p {
   color: #9eaab5;
   font-size: 12px;
@@ -185,6 +198,11 @@ a {
   padding: 3px 10px;
   color: #1da1f2;
   font-weight: bolder;
+  transition: .2s ease;
+}
+.item-buttons a:hover {
+  background-color: #DAE8F2;
+  color: #1da1f2;
 }
 
 .footer-item {
@@ -215,10 +233,6 @@ a {
 }
 
 /*main container post div */
-.tweet-actions {
-width: 100%;
-justify-self: center;
-}
  .fa-strava {
    color:#3b9edb ;
  }
@@ -238,14 +252,75 @@ justify-self: center;
   display: none !important;
 }
 
-
-
-
-
-
-
-
-
+/* modals */
+.tweet-actions {
+  width: 100%;
+  justify-self: center;
+  padding-bottom: 10px;
+  }
+.tweet-modal-content {
+  padding: 10px 10px 0;
+  width: 100%;
+}
+#tweetInput {
+  height: 100px;
+  padding-left: 20px;
+  overflow-y: hidden;
+}
+#tweetInput::placeholder {
+  font-size: 20px;
+  font-weight: 400;
+}
+.who-can-reply button {
+  padding: 5px 20px;
+  border: none;
+  color: #1da1f2;
+  font-weight: bolder;
+  border-radius: 9999px;
+}
+.who-can-reply button:hover {
+  background-color: #E8F5FE;
+}
+.tweet-modal-divider {
+  border: 1px solid #EBEEF0;
+  margin: 10px 0;
+}
+.modal-body {
+  padding: 0 !important;
+}
+.tweet-settings a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: .2s ease;
+}
+.tweet-settings a:hover {
+  background-color: #E8F5FE;
+}
+.modal-body {
+  padding-left: 10px !important;
+  padding-top: 10px !important;
+}
+.tweet-button button {
+  background-color: #1da1f2;
+  color: white;
+  font-weight: bolder;
+  padding: 5px 20px;
+  border-radius: 9999px;
+}
+.modal-header button {
+  border: none;
+  color: #1DA1F2;
+  font-size: 20px;
+  font-weight: 400;
+}
+.modal-header {
+  padding: .5rem !important;
+}
 
 
 /*mEDIA qUERIES*/

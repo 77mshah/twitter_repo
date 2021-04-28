@@ -112,6 +112,10 @@ footer {
     justify-content: center;
     align-items: center;
 }
+.item-buttons a:hover { 
+    background-color: #DAE8F2;
+    color: inherit;
+}
 .footer-item span {
     color: #5B7083;
     font-size: 13px;

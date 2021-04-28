@@ -91,6 +91,8 @@
                                 href="#"
                                 class="tweet-link"
                                 id="tweet-link1"
+                                data-bs-toggle="modal" 
+                                data-bs-target="#tweetModal"
                             >
                                 Tweet
                             </button>
@@ -822,6 +824,69 @@
                 </main>
             </div>
         </div>
+        <div class="modals">
+            <div class="modal fade" id="tweetModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="float-start m-0" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body d-flex">
+                            <div class="pp">
+                                <img src="assets/img/bill gates.jpg" alt="">
+                            </div>
+                            <div class="tweet-modal-content">
+                                <div class="tweet-input">
+                                    <textarea name="tweet" id="tweetInput" placeholder="What's happening?"></textarea>
+                                </div>
+                                <div class="who-can-reply">
+                                    <button>
+                                        <i class="fas fa-globe-europe"></i>
+                                        <span>Everyone Can Reply</span>
+                                    </button>
+                                </div>
+                                <div class="tweet-modal-divider"></div>
+                                <div class="tweet-actions d-flex justify-content-between">
+                                    <div class="tweet-settings d-flex justify-content-between">
+                                        <div class="media">
+                                            <a href="#">
+                                                <i class="far fa-image"></i>
+                                            </a>
+                                        </div>
+                                        <div class="gif">
+                                            <a href="#">
+                                                <i class="fas fa-file-image"></i>
+                                            </a>
+                                        </div>
+                                        <div class="poll">
+                                            <a href="#">
+                                                <i class="fas fa-poll-h"></i>
+                                            </a>
+                                        </div>
+                                        <div class="emoji">
+                                            <a href="#">
+                                                <i class="far fa-smile"></i>
+                                            </a>
+                                        </div>
+                                        <div class="schedule">
+                                            <a href="#">
+                                                <i class="far fa-clock"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="tweet-button d-flex justify-content-center align-items-center">
+                                        <button id="tweetBtn">Tweet</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
